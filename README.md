@@ -1,2 +1,2 @@
 # Workspace
-* Esto es un cambio a propósito *
+*Esto es un cambio a propósito*
