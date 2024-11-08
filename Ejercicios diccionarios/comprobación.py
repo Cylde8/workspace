@@ -1,0 +1,8 @@
+#program aque comprueba si existe un valor ene le diccionario
+diccionario={'a': 100, 'b': 200, 'c': 300}
+
+valor=int(input('Dígame un número: '))
+if valor in diccionario.values():
+    print(f'El número {valor} está en el diccionario')
+else:
+    print(f'El número {valor} no está en el diccionario')
