@@ -35,12 +35,12 @@ while True:
                     print(f'{clave.capitalize()}:{valor}')
         case '2':
             apellido=input('Introduce el apellido: ')
-            if 'apellido' in usuarios:
+            if apellido in usuarios:
                 print('El usuario ya existe.\n')
             else:
                 nombre=input('Introduce el nombre: ')
                 ocupacion=input('Introduce la ocupación: ')
-                aficiones=input('Introduce las aficiones: '.split(','))
+                aficiones=input('Introduce las aficiones separadas por comas: ').split(',')
                 edad=input('Introducre la edad: ')
                 usuarios[apellido]={
                     'Nombre':nombre,
@@ -48,11 +48,21 @@ while True:
                     'aficiones':aficiones,
                     'edad':edad
                 }
-                print('El usuario ha sido añadido.')
-#        case '3':
+                print('El usuario ha sido añadido.\n')
+        case '3':
+            borrar=input('Introduce el apellido: ')
+            if borrar not in usuarios:
+                print('El usuario no existe.\n')
+            else:
+                del usuarios[borrar]
+                print(f'Se ha borrado el usuario {borrar}\n')
 
-#        case '4':
-
+        case '4':
+            buscar=input('Introduce el usuario a buscar: ')
+            if buscar not in usuarios:
+                print('El usuario no existe.\n')
+            else:
+                print('El usuario existe.\n')
         case '5':
             break            
 
