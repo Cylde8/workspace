@@ -24,7 +24,7 @@ usuarios={
 # Dependiendo de lo que conteste el usuario se hará lo que dice esa opción.
 
 while True:
-    elige_opcion = input("1 - listar usuarios, 2 - añadir un usuario, 3 - borrar un usuario, 4 - buscar un usuario, 5 - guardar, 6 - salir: ")
+    elige_opcion = input("1 - listar usuarios, 2 - añadir un usuario, 3 - borrar un usuario, 4 - buscar un usuario, 5 - guardar en el fichero, 6 - salir: ")
     match elige_opcion:
         case '1':
             print('** Todos los usuarios **')
@@ -62,10 +62,16 @@ while True:
             if buscar not in usuarios:
                 print('El usuario no existe.\n')
             else:
-                print('El usuario existe.\n')
-#        case '5':
-
-#        case '6':
-#            break            
+                informacion_usuario = usuarios[buscar]
+                for clave, valor in informacion_usuario.items():
+                    print(f'{clave.capitalize()}:{valor}')
+        case '5':
+            with open('ficheros/usuarios.dat','a') as f:
+                for clave,valor in usuarios.items():
+                    f.write(clave + '\n')
+                    f.write(valor + '\n')
+            print('Información añadida al fichero')
+        case '6':
+            break            
 
 
