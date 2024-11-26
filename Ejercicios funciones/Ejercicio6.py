@@ -14,8 +14,4 @@ def Login(a,b):
 
 usuario=input('Usuario: ')
 contraseña=input('Contraseña: ')
-
-if usuario=='usuario1' and contraseña=='asdasd':
-    print('Verdadero')
-else:
-    Login(usuario,contraseña)
+Login(usuario,contraseña)

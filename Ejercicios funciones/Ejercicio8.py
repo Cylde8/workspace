@@ -6,7 +6,7 @@ def DiasDelMes(mes,bisiesto):
     elif mes in meses30:
         dias=30
     else:
-        if 'bisiesto':
+        if bisiesto=='bisiesto':
             dias=29
         else:
             dias=28
