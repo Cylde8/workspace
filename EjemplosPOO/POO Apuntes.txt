@@ -1,0 +1,13 @@
+INTRO:
+    Object-Oriented Programming is one of the basics when programming. It's more or less a model of program that you can later adapt for your needs. 
+    You create for example a basic person and then you can use that model to create different person.
+    The four principles of OOP are:
+
+1. Encapsulation
+    At a program there are different objects that interact with each other, but all the objects have their private functions or methods. If you want to interact with an Object you must use the exact methods.
+    So to encapsulate is to place all that logic into an specific class. For example to encapsule all tho logic of a car into a 'Car' class.
+    In the car's case you ca't directly change the amount of fuel, but you can refill it. So fuel is a private state and refill is a public method that modifies that state.
+
+2. Abstraction
+    This is an extension of encapsulation. sometimes the proces behind something is to long, but the order is simple
+

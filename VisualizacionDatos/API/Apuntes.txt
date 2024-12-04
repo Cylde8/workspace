@@ -1,0 +1,6 @@
+El concepto de API(Application Programming Interface) va a permitir que nuestra aplicación se conecte con otras para recibir información.
+Las APis pueden ser de varios tipos:
+    1. REST(Representational State Transfer)
+    2. SOAP(Simple Object Access Protocol)
+Las APIs pueden ser públicas o privadas(requiere un token).
+Pueden ser locales o remotas(servicios web[REST o SOAP]).
