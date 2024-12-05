@@ -9,5 +9,12 @@ INTRO:
     In the car's case you ca't directly change the amount of fuel, but you can refill it. So fuel is a private state and refill is a public method that modifies that state.
 
 2. Abstraction
-    This is an extension of encapsulation. sometimes the proces behind something is to long, but the order is simple
+    This is an extension of encapsulation. sometimes the proces behind something is to long, but the order is simple. so the complex and large codebase is hidden and only the relevant is exposed
+    the mecanism should be easy to use and rearly change. You interact with the phone just by using a few buttons but lots of thing are happening.
+
+3. Inheritance
+    it is when an object reuses the logic of another object while implementing own ones. Every object have their own characteristics and share the common ones.
+
+4. Polymorphism
+    Imagin you have a principal class called form. this class has two functions, calculate area and surface. then whe have diferent forms: circle, rectangle and triangle. the methods are the same, but the formulas are diferent. So depending of the object the formula will change even if it is the same method
 
